@@ -1,0 +1,17 @@
+@endpoint_local = http://127.0.0.1:8080
+
+
+# @name find
+GET  {{endpoint_local}}/todo
+Content-Type: application/json
+
+###
+
+# @name create
+POST {{endpoint_local}}/todo
+Content-Type: application/json
+
+{
+  "Name": "test"
+}
+###
